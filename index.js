@@ -5,6 +5,10 @@ const port = 3000;
 
 const app = express();
 
+app.get("/", (req, res) => {
+    res.send("Welcome to Money to Words API")
+})
+
 app.get("/convert", (req, res) => {
     const money = req.query.money;
     if (!money) {
