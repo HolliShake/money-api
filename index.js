@@ -17,7 +17,13 @@ app.get("/", (req, res) => {
 app.get("/convert", (req, res) => {
     const money = req.query.money;
     if (!money) {
-        return res.status(404).send("money parameter not defined!")
+        return res.status(404).send("Money parameter not defined!")
+    }
+
+    let regex = new RegExp(/^(\d{1, 3}(\, \d{3})*|(\d+))(\.\d{2})?$/);
+
+    if (regex.test(money)) {
+        return res.status(400).send("Money parameter is not a valid number!")
     }
 
     const moneyInWords = convertMoneyToWord(parseFloat(money));
