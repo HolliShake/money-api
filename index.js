@@ -28,7 +28,7 @@ app.get("/convert", (req, res) => {
 
     const moneyInWords = convertMoneyToWord(parseFloat(money));
 
-    res.send({
+    return res.send({
         money: money,
         amountInWords: moneyInWords
     })
