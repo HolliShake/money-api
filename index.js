@@ -26,6 +26,8 @@ app.get("/convert", (req, res) => {
         return res.status(400).send("Money parameter is not a valid number!")
     }
 
+    money = money.replace(/,/g, "");
+
     const moneyInWords = convertMoneyToWord(parseFloat(money));
 
     res.send({
