@@ -1,0 +1,25 @@
+{
+  "name": "money-api",
+  "version": "1.0.0",
+  "description": "Converts money to word",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HolliShake/money-api.git"
+  },
+  "keywords": [
+    "api",
+    "money",
+    "converter",
+    "word-to-money"
+  ],
+  "author": "Philipp Andrew Roa Redondo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HolliShake/money-api/issues"
+  },
+  "homepage": "https://github.com/HolliShake/money-api#readme"
+}
