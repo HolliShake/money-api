@@ -20,7 +20,7 @@ app.get("/convert", (req, res) => {
         return res.status(404).send("Money parameter not defined!")
     }
 
-    let regex = new RegExp(/^(\d+(\, \d{3})*|(\d+))(\.\d{2})?$/);
+    const regex = /^\d+(\.\d{1,2})?$/;
 
     if (!regex.test(money)) {
         return res.status(400).send("Money parameter is not a valid number!")
