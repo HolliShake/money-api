@@ -5,4 +5,4 @@
 - [ ] Currency support
 
 ## Test (vercel)
-<a href="https://money-api-ruddy.vercel.app/convert?money=456" target="_blank">Convert 456 in to word</a>
+<a href="https://money-api-ruddy.vercel.app/convert?money=456" target="blank">Convert 456 in to word</a>
