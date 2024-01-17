@@ -71,19 +71,6 @@ function getAppend(placeValue) {
     }
 }
 
-function hundredOrGreaterThanAppend(placeValue) {
-    switch (placeValue) {
-        case 100:
-        case 100_000:
-            return "hundred"
-        case 1_000:
-        case 10_000:
-            return "thousand"
-        default:
-            throw Error(`Number is too big ${placeValue}!!!`)
-    }
-}
-
 function getPlaceValueNumber(fixedSizeNumber) {
    return Math.pow(10, (fixedSizeNumber.length - 1))
 }
