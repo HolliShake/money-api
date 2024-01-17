@@ -28,10 +28,10 @@ app.get("/convert", (req, res) => {
 
     const moneyInWords = convertMoneyToWord(parseFloat(money));
 
-    return res.send({
+    return res.send(JSON.stringify({
         money: money,
         amountInWords: moneyInWords
-    })
+    }, null, 4))
 });
 
 app.listen(port, () => {
