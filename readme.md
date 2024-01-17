@@ -1,7 +1,7 @@
 # Number to word converter
 
 ## Roadmap
-- [x] Support up-to 999 milltion.
+- [x] Support up-to 999 million.
 - [ ] Currency support
 - [ ] Locale support
 
