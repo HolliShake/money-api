@@ -6,3 +6,14 @@
 
 ## Test (vercel)
 <a href="https://money-api-ruddy.vercel.app/convert?money=456" target="blank">Convert 456 in to word</a>
+
+## Samples
+### axios
+```js
+axios.get('https://money-api-ruddy.vercel.app/convert?money=456')
+    .then(({ money, amountInWords }) => {
+
+        console.log(money, "=", amountInWords)
+
+    })
+```
