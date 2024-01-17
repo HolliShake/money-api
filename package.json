@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/HolliShake/money-api#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "serve-favicon": "^2.5.0"
   }
 }

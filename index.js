@@ -1,9 +1,13 @@
 import express from "express";
+import favicon from "serve-favicon";
 import { convertMoneyToWord } from "./lib.js";
 
 const port = 3000;
 
 const app = express();
+
+app.use(favicon('./public/favicon.jpeg'));
+app.use("/public", express.static('public')); 
 
 app.get("/", (req, res) => {
     res.send("Welcome to Money to Words API")
