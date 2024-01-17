@@ -16,10 +16,14 @@
     "converter",
     "word-to-money"
   ],
+  "type": "module",
   "author": "Philipp Andrew Roa Redondo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HolliShake/money-api/issues"
   },
-  "homepage": "https://github.com/HolliShake/money-api#readme"
+  "homepage": "https://github.com/HolliShake/money-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
